@@ -1,0 +1,43 @@
+h1 {
+    font-weight: bold;
+}
+
+.h1 {
+    @include clearfix;
+    font-size: 32px;
+
+    @include mobile {
+        font-size: 22px;
+    }
+}
+
+main {
+    padding-top: 60px;
+    padding-left: 80px;
+
+    @include tablet {
+        padding: 40px 70px;
+    }
+
+    @include mobile {
+        padding: 20px 20px;
+    }
+}
+
+$t: opacity 700ms ease, left 1000ms ease;
+$delay: 600ms;
+
+// animate
+h1 {
+    position: relative;
+    opacity: 0;
+    transition: $t;
+    left: -20px;
+}
+
+.loaded {
+    h1 {
+        opacity: 1;
+        left: 0;
+    }
+}

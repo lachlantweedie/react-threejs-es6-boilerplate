@@ -1,0 +1,4 @@
+@mixin center() {
+    @include position(absolute, 50% null null 50%);
+    transform: translateX(-50%) translateY(-50%);
+}

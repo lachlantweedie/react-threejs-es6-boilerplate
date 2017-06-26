@@ -1,0 +1,33 @@
+{
+    parser: "babel-eslint",
+    "extends": "airbnb",
+     "rules": {
+         // these are only here because I did not
+         // want to update the entire codebase ¯\_(ツ)_/¯
+         "func-names": 0,
+         "no-var": 0,
+         "no-unused-vars": 0,
+         "func-style": 0,
+         "comma-dangle": 0,
+         "valid-jsdoc": 0,
+         "vars-on-top": 0,
+         "complexity": [2, 6],
+         "prefer-template": 0,
+         "no-tabs": 0, // put in by me, need to remove
+         "indent": 0,
+         "arrow-body-style": 0,
+         "padded-blocks" : 0,
+         "no-param-reassign": 0,
+         "no-undef": 0,
+         "no-use-before-define": 0,
+     },
+     "globals": {
+         "jasmine": false,
+         "describe": false,
+         "it": false,
+         "beforeEach": false,
+         "expect": false,
+         "window": false,
+         "requestAnimationFrame": false
+    }
+}
